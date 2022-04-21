@@ -1,4 +1,4 @@
-package main.java.Stack;
+
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Stack {
 	
 
 	  // store elements of stack
-	  private int arr[];
+	  private int[][] arr;
 	  //top of stack
 	  private int top;
 	  // total capacity of the stack
@@ -23,7 +23,8 @@ public class Stack {
 
 	  // push elements to the top of stack
 	  public void push(int x) {
-	    if (isFull()) {
+		  boolean fullCheck=isFull()
+	    if (fullCheck) {
 	      System.out.println("Stack OverFlow");
 
 	      // terminates the program
